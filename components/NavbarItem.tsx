@@ -10,7 +10,7 @@ const NavbarItem = ({value: { title, content, place }} : {
     
     useLayoutEffect(() => {
         if (!show) return
-        
+
         setWidth(ref.current.offsetWidth)
     }, [show])
 

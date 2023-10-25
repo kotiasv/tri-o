@@ -25,7 +25,7 @@ const Navbar = () => {
     }, [])
 
     return (
-        <header className="h-20 grid grid-cols-2 justify-between items-center px-3 fixed shadow-lg w-full">
+        <header className="h-20 grid grid-cols-2 justify-between items-center px-3 bg-white fixed shadow-lg w-full z-20">
             <h1 className="text-3xl font-bold tracking-widest">TRI-O</h1>
             {mobile && mobile < 990 ? (
                 <nav className="">
