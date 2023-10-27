@@ -39,7 +39,7 @@ const NavbarItem = ({value: { title, content, place }} : {
                             {list.content.map((item, i) => 
                                 <li 
                                     key={`title-item-${i}`} 
-                                    className="text-sm mt-4 w-[180px] text-gray-500"
+                                    className="text-sm mt-4 w-[180px] text-gray-500 hover:text-black transition-colors"
                                 >
                                     {item}
                                 </li>

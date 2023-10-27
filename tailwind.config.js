@@ -8,7 +8,11 @@ export default {
     theme: {
         extend: {
             screens: {
-                "header": "990px"
+                "header": "990px",
+                "about": "940px"
+            },
+            gridTemplateColumns: {
+                "about": "400px 500px"
             }
         },
     },
