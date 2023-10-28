@@ -1,17 +1,17 @@
 import { useLayoutEffect, useRef, useState } from "react"
 import { navbarContextItem } from "../constants"
 
-const NavbarItem = ({value: { title, content, place }} : {
+const NavbarItem = ({ value: { title, content, place } }: {
     value: navbarContextItem
 }) => {
-    const ref = useRef(null)
+    const ref = useRef<HTMLDivElement>(null)
     const [width, setWidth] = useState(0)
     const [show, setShow] = useState(false)
-    
+
     useLayoutEffect(() => {
         if (!show) return
 
-        setWidth(ref.current.offsetWidth)
+        setWidth(ref.current ? ref.current.offsetWidth : 0)
     }, [show])
 
     return (
@@ -21,10 +21,10 @@ const NavbarItem = ({value: { title, content, place }} : {
                 gridTemplateColumns: `repeat(${content.length}, 1fr)`,
                 left: `-${place ? width / 1.65 : width - 20}px`
             }}
-            onMouseLeave={() => setShow(false)}
+                onMouseLeave={() => setShow(false)}
             >
-                {content.map((list, i) => 
-                    <div 
+                {content.map((list, i) =>
+                    <div
                         key={`title-list-${i}`}
                         className={"last:border-none border-r border-gray-300"}
                     >
@@ -36,9 +36,9 @@ const NavbarItem = ({value: { title, content, place }} : {
                         <ul className="grid px-3 pt-4 first:w-[160px]" style={{
                             gridTemplateRows: `repeat(${list.content.length}, 1fr)`
                         }}>
-                            {list.content.map((item, i) => 
-                                <li 
-                                    key={`title-item-${i}`} 
+                            {list.content.map((item, i) =>
+                                <li
+                                    key={`title-item-${i}`}
                                     className="text-sm mt-4 w-[180px] text-gray-500 hover:text-black transition-colors"
                                 >
                                     {item}
