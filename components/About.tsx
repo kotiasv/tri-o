@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <div className="grid grid-rows-2 about:grid-cols-about about:max-w-[1100px] px-9 about:items-center about:justify-around about:mx-auto">
+        <div className="grid about:grid-cols-about about:max-w-[1100px] px-9 about:items-center about:justify-around about:mx-auto">
             <div className="w-full mt-8 about:mt-0">
                 <h2 className="text-4xl font-bold">
                     Who We Are?
@@ -17,7 +17,7 @@ const About = () => {
                 <div className="bg-black w-[250px] mt-3 sm:w-[248px] h-[230px] self-end" />
                 <div className="bg-black w-[250px] sm:w-[230px] h-[180px] mt-3 about:mt-0 mr-3 about:self-end justify-self-end" />
                 <div className="bg-black w-[250px] sm:w-[248px] h-[250px] mt-3" />
-                
+
             </div>
         </div>
     )

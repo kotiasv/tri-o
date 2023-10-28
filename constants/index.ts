@@ -157,10 +157,74 @@ const navbarContext: navbarContextItem[] = [
     }
 ]
 
+type benefitsContextItem = {
+    title: string
+    description: string
+}
+
+const benefitsContext: benefitsContextItem[] = [
+    {
+        title: "Best Stream",
+        description: "Everything your favorite artists and friends are posting and reporting on a comprehensive sidebar menu."
+    },
+    {
+        title: "Suggested tracks",
+        description: "Tracks you'll love based on your listening history. Discover new favorites within a familiar groove to you."
+    },
+    {
+        title: "Enjoy the Station",
+        description: "A long radio-like mix of music you can start from any track or artist. Soundtrack your next party with one click."
+    },
+    {
+        title: "Premium Plugins Included",
+        description: "A long radio-like mix of music you can start from any track or artist. Soundtrack your next party with one click."
+    },
+    {
+        title: "Best Stream",
+        description: "Everything your favorite artists and friends are posting and reporting on a comprehensive sidebar menu."
+    },
+    {
+        title: "Suggested tracks",
+        description: "Tracks you'll love based on your listening history. Discover new favorites within a familiar groove to you."
+    }
+]
+
+type blogContextItem = {
+    title: string
+    author: string
+    date: string
+    description: string
+}
+
+const blogContext: blogContextItem[] = [
+    {
+        title: "In The Middle Of A Rainiest",
+        author: "Admin",
+        date: "June 14, 2022",
+        description: "Camping out under a starry sky, in the middle of a tropical lowland rainforest's is Lorem isem dolor sit amete, consectetur adipisicing elided Quaerat reiciendis."
+    },
+    {
+        title: "Before Heading West",
+        author: "Admin",
+        date: "June 14, 2022",
+        description: "Before heading west, we did a 10-day mini trip through Vermont, New Hampshire and Maine isem dolor sit amete, consectetur adipisicing elided Quaerat reiciendis."
+    },
+    {
+        title: "Life On The Road",
+        author: "Admin",
+        date: "June 14, 2022",
+        description: "Artist and writer's William Morris once he said, “Have nothing in your house that you do Lorem isem dolor sit amete, consectetur adipisicing elided Quaerat reiciendis."
+    }
+]
+
 export {
-    navbarContext
+    navbarContext,
+    benefitsContext,
+    blogContext
 }
 
 export type {
-    navbarContextItem
+    navbarContextItem,
+    benefitsContextItem,
+    blogContextItem
 }
