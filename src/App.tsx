@@ -51,7 +51,7 @@ const App = () => {
                 </div>
             </section>
             {/* collection */}
-            <section className="h-[570px] w-full bg-no-repeat bg-center bg-cover bg-[url('./collection.jpg')] grid items-center before:bg-[#34343450] before:w-full before:h-full relative before:absolute before:top-0">
+            <section className="h-[570px] w-full bg-no-repeat bg-img bg-center bg-cover grid items-center before:bg-[#34343450] before:w-full before:h-full relative before:absolute before:top-0">
                 <div className="grid justify-end items-center w-full max-w-5xl mx-auto">
                     <h2 className="text-6xl max-w-sm text-center md:max-w-lg font-bold text-white z-10 leading-[6rem]">
                         The Triple Osbourne Pre Fall Collection.

@@ -9,3 +9,7 @@
     margin: 0;
     font-family: "Poppins", "sans-sherif";
 }
+
+.bg-img {
+    background-image: url("/collection.jpg");
+}

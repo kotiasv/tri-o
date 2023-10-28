@@ -2,7 +2,7 @@ import { blogContext } from "../constants"
 
 const Blog = () => {
     return (
-        <div className="grid gap-7 mt-7 mx-auto justify-center md:grid-cols-2 md:items-center lg:items-start lg:grid-cols-3 max-w-[1250px] mx-auto">
+        <div className="grid gap-7 mt-7 mx-auto justify-center md:grid-cols-2 md:items-center lg:items-start lg:grid-cols-3 max-w-[1250px]">
             {blogContext.map((context, i) => (
                 <div
                     className="px-5 sm:max-w-[512px] md:max-w-[336px] lg:max-w-[400px] mx-auto"
